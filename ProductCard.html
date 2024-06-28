@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Display</title>
+    <!-- <link rel="stylesheet" href="ProductCard.css" /> -->
+  </head>
+  <body>
+    <div class="box">
+      <img src="./download.jpeg" alt="Apple iPhone 14 Plus" />
+      <p class="product-name">Apple iPhone 14 Plus<br />(Green, 128 GB)</p>
+      <div class="rating">
+        <div class="star">4.6</div>
+        <span class="light">(70,105)</span>
+      </div>
+      <p class="price">
+        Rs. 58,999 <strike class="light">79,900</strike>
+        <span class="discount">26% off</span>
+      </p>
+    </div>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .box {
+        border: 1px solid black;
+        width: 300px;
+        box-sizing: border-box;
+        margin: 30px;
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+      }
+
+      .product-name {
+        font-size: 18px;
+        margin: 10px 0;
+      }
+
+      .rating {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin: 10px 0;
+      }
+
+      .star {
+        border: 1px solid black;
+        border-radius: 5px;
+        height: 20px;
+        width: 30px;
+        background-color: rgb(8, 122, 8);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+      }
+
+      .light {
+        color: rgb(151, 151, 151);
+      }
+
+      .price {
+        font-size: 20px;
+        margin: 10px 0;
+      }
+
+      .discount {
+        font-size: 14px;
+        color: rgb(8, 122, 8);
+      }
+    </style>
+  </body>
+</html>
